@@ -221,7 +221,7 @@ table {
 .buttonArea button {
     width: calc(99.7%/3);
     padding: 0.5em;
-    font-size: 1.1rem;
+    font-size: 1rem;
     border-radius: 0.2em;
 }
 
