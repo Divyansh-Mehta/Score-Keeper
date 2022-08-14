@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@700&family=Raleway:wght@800&display=swap" rel="stylesheet">
+    <title>Score Keeper</title>
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="https://images.unsplash.com/photo-1534158914592-062992fbe900" alt="pingpong">
+        </div>
+        <div class="heading"><span>Ping Pong Score Keeper</span></div>
+        <div class="scoreContainer">
+        <h1><span id="p1Display"> 0 </span> to <span id="p2Display"> 0 </span> </h1>
+            <div class="subtitle"><span> Use the buttons below to keep score </span></div>
+            <div class="winScore">
+                <label for="playTo"> Playing To</label>
+                <select id="playTo">
+                    <option value="3"> 3 </option>
+                    <option value="5"> 5 </option>
+                    <option value="7"> 7 </option>
+                    <option value="11"> 11 </option>
+                    <option value="13"> 13 </option>
+                    <option value="15"> 15 </option>
+                </select>
+            </div>
+        </div>
+        <div class="buttonArea">
+            <button id="p1Button" class="greenButton"> +1 Player One</button>
+            <button id="p2Button" class="blueButton"> +1 Player Two</button>
+            <button id="reset" class="redButton"> Reset </button>
+        </div>
+    </div>
+
+
+    <!-- Script links -->
+    <script src="./app.js"></script>
+</body>
+</html>

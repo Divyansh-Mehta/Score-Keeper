@@ -1,0 +1,280 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* The main css start here */
+
+.container{
+    width: 40%;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: 2em auto;
+    box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
+}
+
+
+/* Image */
+.image {
+    width: 100%;
+    aspect-ratio: 2 / 1;
+    min-height: 200px;
+}
+.image img{
+    height: 100%;
+    width: 100%;
+}
+
+/* Heading */
+.heading {
+    padding: 0.5em;
+    box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
+}
+
+.heading span{
+    font-size: 0.85em;
+    color: #363636;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* ScoreKeeper */
+.scoreContainer{
+    margin: 1.3em 0.8em;
+}
+
+.scoreContainer h1{
+    font-size: 2.5em;
+    color: #363636;
+    font-family: sans-serif;
+}
+
+.subtitle {
+    margin: 0em 0em 1em 0em;
+}
+
+.subtitle span {
+    color: #4a4a4a;
+    font-size: 1.25;
+    font-family: sans-serif;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.winScore label{
+    font-size: 1.2em;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+.winScore select {
+    border-radius: 29em;
+    padding: 0.5em 1em 0.5em 0.5em;
+    outline: none;
+    /* padding: 0.2em;
+    border-radius: 1px; */
+}
+
+.winScore select:hover {
+    cursor: pointer;
+    box-shadow: 0 0 5px 2px #C5C5C5;
+}
+
+
+/* buttons */
+.buttonArea {
+    font-size: 0px;
+    display: flex;
+}
+
+.buttonArea button {
+    width: calc(99.7%/3);
+    padding: 0.5em;
+    font-size: 1.1rem;
+    border-radius: 0.2em;
+}
+
+.buttonArea button:hover {
+    cursor: pointer;
+}
+
+.greenButton{
+    background-color: #00d1b2;
+    border-color: transparent;
+    color: #fff;
+}
+
+.greenButton:hover{
+    background-color: #00d1b2ed;
+    /* 00947e */
+}
+
+.blueButton {
+    background-color: #3e8ed0;
+    border-color: transparent;
+    color: #fff;
+    margin: 0px calc(0.3%/2);
+}
+
+.blueButton:hover {
+    background-color: #3e8ed0e8;
+}
+
+.redButton {
+    background-color: #f14668;
+    border-color: transparent;
+    color: #fff;
+}
+
+.redButton:hover {
+    background-color: #f14668ec;
+}
+
+
+@media screen and (max-width: 400px) {
+    .container {
+        min-width: 350px;
+    }
+}
+
+
+
+/* Classes for js */
+.winner {
+    color: green;
+}
+
+.loser {
+    color: red;
+}
